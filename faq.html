@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FREEBEE – FAQ</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- (선택) 추가 커스텀 CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+  <!-- Header (always fixed) -->
+  <header class="header">
+  <div class="container header__inner">
+    <!-- 1) 햄버거 토글 버튼 -->
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span class="nav-toggle__icon">☰</span>
+    </button>
+
+    <!-- 2) 로고 -->
+    <a href="index.html" class="logo">FREEBEE</a>
+
+    <!-- 3) 네비게이션 -->
+    <nav class="nav" role="navigation">
+      <ul class="nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="petapp.html">App</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="partnerships.html">Partners</a></li>
+        <li><a href="whitepaper.html">Whitepaper</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 bg-white/70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">FREEBEE</a>
+      <nav class="space-x-6 text-gray-700">
+        <a href="index.html#hero" class="hover:text-indigo-600 transition">Home</a>
+        <a href="petapp.html" class="hover:text-indigo-600 transition">App</a>
+        <a href="tokenomics.html" class="hover:text-indigo-600 transition">Tokenomics</a>
+        <a href="roadmap.html" class="hover:text-indigo-600 transition">Roadmap</a>
+        <a href="team.html" class="hover:text-indigo-600 transition">Team</a>
+        <a href="faq.html" class="text-indigo-600 font-semibold">FAQ</a>
+        <a href="partnerships.html" class="hover:text-indigo-600 transition">Partners</a>
+        <a href="whitepaper.html" class="hover:text-indigo-600 transition">Whitepaper</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-16">
+    <section id="faq" class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center text-indigo-600 mb-8">
+        자주 묻는 질문
+      </h2>
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+          <button class="w-full text-left px-6 py-4 bg-white flex justify-between items-center accordion-header">
+            <span class="font-medium">포인트는 어떻게 적립되나요?</span>
+            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-6 py-4 bg-gray-50 hidden accordion-body">
+            앱에서 케어 사진을 업로드하면 AI 검증 후 즉시 포인트가 자동 적립됩니다.
+          </div>
+        </div>
+        <!-- FAQ Item 2 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+          <button class="w-full text-left px-6 py-4 bg-white flex justify-between items-center accordion-header">
+            <span class="font-medium">포인트를 토큰으로 어떻게 전환하나요?</span>
+            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-6 py-4 bg-gray-50 hidden accordion-body">
+            지갑 연동 후 ‘포인트 전환’ 메뉴에서 전환할 수량을 입력하면, 메타마스크로 토큰이 전송됩니다.
+          </div>
+        </div>
+        <!-- FAQ Item 3 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+          <button class="w-full text-left px-6 py-4 bg-white flex justify-between items-center accordion-header">
+            <span class="font-medium">제휴 매장은 어디서 확인하나요?</span>
+            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-6 py-4 bg-gray-50 hidden accordion-body">
+            앱 내 ‘제휴 매장’ 탭에서 지도 및 리스트로 확인할 수 있습니다.
+          </div>
+        </div>
+        <!-- 추가 FAQ 아이템 필요시 반복 -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-8 mt-12">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <p>© 2025 FREEBEE COIN. All rights reserved.</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="inline-block hover:opacity-80 transition">
+          <img src="assets/images/social/discord.png" alt="Discord" class="w-6 h-6 inline" />
+        </a>
+        <a href="#" class="inline-block hover:opacity-80 transition">
+          <img src="assets/images/social/twitter.png" alt="Twitter" class="w-6 h-6 inline" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accordion Script -->
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const icon = btn.querySelector('svg');
+        body.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
